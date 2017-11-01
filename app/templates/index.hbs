@@ -1,0 +1,81 @@
+<input type="checkbox">
+
+<body>
+  <div class="screenDisplay">
+    <div class="input-text ">{{operationBuffer}}</div>
+    <div class="output-text">{{outputDisplay}}</div>
+    <i></i>
+  </div>
+
+  <div style="padding: 16px">
+    <div>
+      <button class="operation" {{action 'pressButton' 'C'}}>
+        <h1>C</h1>
+      </button>
+      <button class="operation" {{action 'pressButton' '('}}>
+        <h1>(</h1>
+      </button>
+      <button class="operation" {{action 'pressButton' ')'}}>
+         <h1>)</h1>
+       </button>
+      <button class="operation" {{action 'pressButton' '/'}}>
+        <h1>/</h1>
+      </button>
+    </div>
+    <div>
+      <button class="number" {{action 'pressButton' 7}}>
+        <h1>7</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 8}}>
+        <h1>8</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 9}}>
+        <h1>9</h1>
+      </button>
+      <button class="operation" {{action 'pressButton' '*'}}>
+        <h1>x</h1>
+      </button>
+    </div>
+    <div>
+      <button class="number" {{action 'pressButton' 4}}>
+        <h1>4</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 5}}>
+        <h1>5</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 6}}>
+        <h1>6</h1>
+      </button>
+      <button class="operation" {{action 'pressButton' '-'}}>
+        <h1>-</h1>
+      </button>
+    </div>
+    <div>
+      <button class="number" {{action 'pressButton' 1}}>
+        <h1>1</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 2}}>
+        <h1>2</h1>
+      </button>
+      <button class="number" {{action 'pressButton' 3}}>
+        <h1>3</h1>
+      </button>
+      <button class="operation" {{action 'pressButton' '+'}}>
+        <h1>+</h1>
+      </button>
+    </div>
+    <div>
+      <button class="number" {{action 'pressButton' 0}}>
+        <h1>0</h1>
+      </button>
+      <button class="number" {{action 'pressButton' "."}}>
+        <h1>.</h1>
+      </button>
+      <button class="equals" {{action 'pressButton' "="}}>
+        <h1>=</h1>
+      </button>
+
+
+    </div>
+  </div>
+</body>
