@@ -1,7 +1,10 @@
 # ember-calc
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ember-calc is a simple browser based calculator written in EmberJS
+
+The base skin can be changed with the checkbox in the upper left
+
+
 
 ## Prerequisites
 
@@ -11,6 +14,8 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
+* [ember-bootstrap](https://github.com/emberjs-addons/ember-bootstrap)
+
 
 ## Installation
 
@@ -38,9 +43,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
