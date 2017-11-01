@@ -4,6 +4,8 @@ Ember-calc is a simple browser based calculator written in EmberJS
 
 The base skin can be changed with the checkbox in the upper left
 
+![Screenshot](http://full/path/to/img.jpg "Optional title")
+
 
 
 ## Prerequisites
