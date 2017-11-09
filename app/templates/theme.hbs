@@ -1,0 +1,11 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  {{#link-to 'index' class="button"}}
+    HOME
+  {{/link-to}}
+  {{#each model as |theme|}}
+    <article class="listing">
+      <h3 style="color: white">{{theme.name}}</h3>
+    </article>
+  {{/each}}
+</div>
