@@ -4,10 +4,6 @@
 @contrast_text_color_4: white;
 @highlight_color: green;
 
-.themeName::before {
-  content: "Default";
-}
-
 body {
   background-color: rgb(52, 28, 44);
 }
@@ -26,6 +22,27 @@ body {
   }
 }
 .equals:extend(.button) {
+  background-color: @background_color_3;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+
+.numberDefault:extend(.button) {
+  background-color: @background_color_1;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.operationDefault:extend(.button) {
+  background-color: @background_color_2;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.equalsDefault:extend(.button) {
   background-color: @background_color_3;
   color: @contrast_text_color_4;
   &:hover {

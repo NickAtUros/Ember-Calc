@@ -1,0 +1,26 @@
+@Lightbackground_color_1: white;
+@Lightbackground_color_2: pink;
+@Lightbackground_color_3: lavender;
+@Lightcontrast_text_color_4: brown;
+@Lighthighlight_color: red;
+
+.numberLight:extend(.button) {
+  background-color: @Lightbackground_color_1;
+  &:hover {
+    background-color: @Lighthighlight_color;
+  }
+}
+.operationLight:extend(.button) {
+  background-color: @Lightbackground_color_2;
+  color: @Lightcontrast_text_color_4;
+  &:hover {
+    background-color: @Lighthighlight_color;
+  }
+}
+.equalsLight:extend(.button) {
+  background-color: @Lightbackground_color_3;
+  color: @Lightcontrast_text_color_4;
+  &:hover {
+    background-color: @Lighthighlight_color;
+  }
+}

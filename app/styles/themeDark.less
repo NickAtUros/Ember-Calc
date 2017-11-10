@@ -1,0 +1,27 @@
+@Darkbackground_color_1: black;
+@Darkbackground_color_2: rgb(33, 60, 35);
+@Darkbackground_color_3: rgb(28, 0, 45);
+@Darkcontrast_text_color_4: yellow;
+@Darkhighlight_color: rgb(150, 146, 152);
+
+.numberDark:extend(.button) {
+  background-color: @Darkbackground_color_1;
+  color: @Darkcontrast_text_color_4;
+  &:hover {
+    background-color: @Darkhighlight_color;
+  }
+}
+.operationDark:extend(.button) {
+  background-color: @Darkbackground_color_2;
+  color: @Darkcontrast_text_color_4;
+  &:hover {
+    background-color: @Darkhighlight_color;
+  }
+}
+.equalsDark:extend(.button) {
+  background-color: @Darkbackground_color_3;
+  color: @Darkcontrast_text_color_4;
+  &:hover {
+    background-color: @Darkhighlight_color;
+  }
+}

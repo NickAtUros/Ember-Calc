@@ -1,27 +1,94 @@
-.themeName::before {
-  content: "Color";
+body {
+  background-color: #341c2c;
+}
+.number {
+  background-color: grey;
+}
+.number:hover {
+  background-color: green;
+}
+.operation {
+  background-color: orange;
+  color: white;
+}
+.operation:hover {
+  background-color: green;
+}
+.equals {
+  background-color: blue;
+  color: white;
+}
+.equals:hover {
+  background-color: green;
+}
+body {
+  background-color: #3c0101;
+}
+.numberDark {
+  background-color: black;
+  color: yellow;
+}
+.numberDark:hover {
+  background-color: #969298;
+}
+.operationDark {
+  background-color: #213c23;
+  color: yellow;
+}
+.operationDark:hover {
+  background-color: #969298;
+}
+.equalsDark {
+  background-color: #1c002d;
+  color: yellow;
+}
+.equalsDark:hover {
+  background-color: #969298;
+}
+body {
+  background-color: #5dcffc;
+}
+.numberLight {
+  background-color: white;
+}
+.numberLight:hover {
+  background-color: red;
+}
+.operationLight {
+  background-color: pink;
+  color: brown;
+}
+.operationLight:hover {
+  background-color: red;
+}
+.equalsLight {
+  background-color: lavender;
+  color: brown;
+}
+.equalsLight:hover {
+  background-color: red;
 }
 body {
   background-color: teal;
 }
-.number {
+.numberColor {
   background-color: red;
 }
-.number:hover {
+.numberColor:hover {
   background-color: #d21ae2;
 }
-.operation {
+.operationColor {
   background-color: yellow;
   color: #1c4414;
 }
-.operation:hover {
+.operationColor:hover {
   background-color: #d21ae2;
 }
-.equals {
+.equalsColor {
   background-color: #04cc12;
   color: #1c4414;
 }
-.equals:hover {
+.equalsColor:hover {
   background-color: #d21ae2;
 }
 /* Safari 4.0 - 8.0 */
@@ -90,7 +157,16 @@ body {
 .button,
 .number,
 .operation,
-.equals {
+.equals,
+.numberDark,
+.operationDark,
+.equalsDark,
+.numberLight,
+.operationLight,
+.equalsLight,
+.numberColor,
+.operationColor,
+.equalsColor {
   height: 100px;
   width: 24%;
   border-radius: 25px;
@@ -103,19 +179,79 @@ i {
   top: 0;
   left: 0;
   /*   gradient   */
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.85)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(1%, rgba(255, 255, 255, 0.03)),
+    color-stop(30%, rgba(255, 255, 255, 0.85)),
+    color-stop(50%, rgba(255, 255, 255, 0.85)),
+    color-stop(70%, rgba(255, 255, 255, 0.85)),
+    color-stop(71%, rgba(255, 255, 255, 0.85)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* IE10+ */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#00ffffff',
+      endColorstr='#00ffffff',
+      GradientType=1
+    );
   /* IE6-9 */
   width: 15%;
   height: 100%;

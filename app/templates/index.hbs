@@ -1,87 +1,179 @@
+<!-- This is so hacky -->
+
 <body>
+  {{#each model as |current|}}
+
   <div class="screenDisplay">
-    {{#each model as |current|}}
-      <h1 style="color:white">Now using {{current.name}} calculator!</h1>
-    {{else}}
-      <h1 style="color:white">Default Calculator</h1>
-    {{/each}}
+    <h1 style="color:white">Now using {{current.name}} calculator!</h1>
     <div class="input-text ">{{operationBuffer}}</div>
     <div class="output-text">{{outputDisplay}}</div>
     <i></i>
   </div>
 
   <div style="padding: 16px">
-    <div>
-      <button class="operation" {{action 'pressButton' 'C'}}>
+    <div class=>
+      <button class="operation{{current.name}}" {{action 'pressButton' 'C'}}>
         <h1>C</h1>
       </button>
-      <button class="operation" {{action 'pressButton' '('}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' '('}}>
         <h1>(</h1>
       </button>
-      <button class="operation" {{action 'pressButton' ')'}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' ')'}}>
          <h1>)</h1>
        </button>
-      <button class="operation" {{action 'pressButton' '/'}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' '/'}}>
         <h1>/</h1>
       </button>
     </div>
     <div>
-      <button class="number" {{action 'pressButton' 7}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 7}}>
         <h1>7</h1>
       </button>
-      <button class="number" {{action 'pressButton' 8}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 8}}>
         <h1>8</h1>
       </button>
-      <button class="number" {{action 'pressButton' 9}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 9}}>
         <h1>9</h1>
       </button>
-      <button class="operation" {{action 'pressButton' '*'}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' '*'}}>
         <h1>x</h1>
       </button>
     </div>
     <div>
-      <button class="number" {{action 'pressButton' 4}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 4}}>
         <h1>4</h1>
       </button>
-      <button class="number" {{action 'pressButton' 5}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 5}}>
         <h1>5</h1>
       </button>
-      <button class="number" {{action 'pressButton' 6}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 6}}>
         <h1>6</h1>
       </button>
-      <button class="operation" {{action 'pressButton' '-'}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' '-'}}>
         <h1>-</h1>
       </button>
     </div>
     <div>
-      <button class="number" {{action 'pressButton' 1}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 1}}>
         <h1>1</h1>
       </button>
-      <button class="number" {{action 'pressButton' 2}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 2}}>
         <h1>2</h1>
       </button>
-      <button class="number" {{action 'pressButton' 3}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 3}}>
         <h1>3</h1>
       </button>
-      <button class="operation" {{action 'pressButton' '+'}}>
+      <button class="operation{{current.name}}" {{action 'pressButton' '+'}}>
         <h1>+</h1>
       </button>
     </div>
     <div>
-      <button class="number" {{action 'pressButton' 0}}>
+      <button class="number{{current.name}}" {{action 'pressButton' 0}}>
         <h1>0</h1>
       </button>
-      <button class="number" {{action 'pressButton' "."}}>
+      <button class="number{{current.name}}" {{action 'pressButton' "."}}>
         <h1>.</h1>
       </button>
-      <button class="equals" {{action 'pressButton' "="}}>
+      <button class="equals{{current.name}}" {{action 'pressButton' "="}}>
         <h1>=</h1>
       </button>
-      <button class="equals" {{action 'pressButton' "="}}>
-        {{#link-to 'themes' class="button"}}
-          <h1 style="color: white">THEMES</h1>
-        {{/link-to}}
+
+      {{#link-to 'themes' class="button"}}
+      <button class="equals{{current.name}}" {{action 'pressButton' "C"}}>
+        <h1 style="color: white">THEMES</h1>
       </button>
+      {{/link-to}}
+
     </div>
   </div>
+
+
+  {{else}}
+
+  <!-- No shame -->
+
+    <div class="screenDisplay">
+      <h1 style="color:white">Now using Default calculator!</h1>
+      <div class="input-text ">{{operationBuffer}}</div>
+      <div class="output-text">{{outputDisplay}}</div>
+      <i></i>
+    </div>
+
+    <div style="padding: 16px">
+      <div>
+        <button class="operation" {{action 'pressButton' 'C'}}>
+          <h1>C</h1>
+        </button>
+        <button class="operation" {{action 'pressButton' '('}}>
+          <h1>(</h1>
+        </button>
+        <button class="operation" {{action 'pressButton' ')'}}>
+           <h1>)</h1>
+         </button>
+        <button class="operation" {{action 'pressButton' '/'}}>
+          <h1>/</h1>
+        </button>
+      </div>
+      <div>
+        <button class="number" {{action 'pressButton' 7}}>
+          <h1>7</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 8}}>
+          <h1>8</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 9}}>
+          <h1>9</h1>
+        </button>
+        <button class="operation" {{action 'pressButton' '*'}}>
+          <h1>x</h1>
+        </button>
+      </div>
+      <div>
+        <button class="number" {{action 'pressButton' 4}}>
+          <h1>4</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 5}}>
+          <h1>5</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 6}}>
+          <h1>6</h1>
+        </button>
+        <button class="operation" {{action 'pressButton' '-'}}>
+          <h1>-</h1>
+        </button>
+      </div>
+      <div>
+        <button class="number" {{action 'pressButton' 1}}>
+          <h1>1</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 2}}>
+          <h1>2</h1>
+        </button>
+        <button class="number" {{action 'pressButton' 3}}>
+          <h1>3</h1>
+        </button>
+        <button class="operation" {{action 'pressButton' '+'}}>
+          <h1>+</h1>
+        </button>
+      </div>
+      <div>
+        <button class="number" {{action 'pressButton' 0}}>
+          <h1>0</h1>
+        </button>
+        <button class="number" {{action 'pressButton' "."}}>
+          <h1>.</h1>
+        </button>
+        <button class="equals" {{action 'pressButton' "="}}>
+          <h1>=</h1>
+        </button>
+
+        {{#link-to 'themes' class="button"}}
+        <button class="equals" {{action 'pressButton' "C"}}>
+          <h1 style="color: white">THEMES</h1>
+        </button>
+        {{/link-to}}
+
+      </div>
+    </div>
+  {{/each}}
 </body>
