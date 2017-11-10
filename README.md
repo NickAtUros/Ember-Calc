@@ -5,11 +5,11 @@ Ember-calc is a simple browser based calculator written in EmberJS
 To change the theme, click the THEME button on the lower right and select
 your new look
 
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-42-24.png)
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-42-50.png)
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-06.png)
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-22.png)
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-40.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Default.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Light.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Dark.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Colors.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Themes.png)
 
 ## Prerequisites
 
