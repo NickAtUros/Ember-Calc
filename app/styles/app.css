@@ -1,15 +1,28 @@
-input:checked ~ body .screenDisplay {
-  background-color: orange;
+.themeName::before {
+  content: "Color";
 }
-input:checked ~ body .operation {
-  background-color: lavender;
-  color: black;
+body {
+  background-color: teal;
 }
-input:checked ~ body .number {
-  background-color: green;
+.number {
+  background-color: red;
 }
-input:checked ~ body .equals {
-  background-color: purple;
+.number:hover {
+  background-color: #d21ae2;
+}
+.operation {
+  background-color: yellow;
+  color: #1c4414;
+}
+.operation:hover {
+  background-color: #d21ae2;
+}
+.equals {
+  background-color: #04cc12;
+  color: #1c4414;
+}
+.equals:hover {
+  background-color: #d21ae2;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes "example" {
@@ -41,7 +54,6 @@ html {
 }
 body {
   height: 100%;
-  background-color: #111111;
 }
 .screenDisplay {
   width: 95%;
@@ -52,6 +64,7 @@ body {
   text-align: right;
   position: relative;
   padding: 0;
+  border-radius: 10px;
 }
 .input-text {
   color: #6897bb;
@@ -82,26 +95,6 @@ body {
   width: 24%;
   border-radius: 25px;
   font-size: 1rem;
-}
-.number {
-  background-color: grey;
-}
-.number:hover {
-  background-color: green;
-}
-.operation {
-  background-color: orange;
-  color: white;
-}
-.operation:hover {
-  background-color: green;
-}
-.equals {
-  background-color: blue;
-  color: white;
-}
-.equals:hover {
-  background-color: green;
 }
 i {
   /*   positioning */

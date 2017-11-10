@@ -1,0 +1,35 @@
+@background_color_1: black;
+@background_color_2: rgb(33, 60, 35);
+@background_color_3: rgb(28, 0, 45);
+@contrast_text_color_4: yellow;
+@highlight_color: rgb(150, 146, 152);
+
+.themeName::before {
+  content: "Default";
+}
+
+body {
+  background-color: rgb(60, 1, 1);
+}
+
+.number:extend(.button) {
+  background-color: @background_color_1;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.operation:extend(.button) {
+  background-color: @background_color_2;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.equals:extend(.button) {
+  background-color: @background_color_3;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}

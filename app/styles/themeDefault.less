@@ -1,0 +1,34 @@
+@background_color_1: grey;
+@background_color_2: orange;
+@background_color_3: blue;
+@contrast_text_color_4: white;
+@highlight_color: green;
+
+.themeName::before {
+  content: "Default";
+}
+
+body {
+  background-color: rgb(52, 28, 44);
+}
+
+.number:extend(.button) {
+  background-color: @background_color_1;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.operation:extend(.button) {
+  background-color: @background_color_2;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}
+.equals:extend(.button) {
+  background-color: @background_color_3;
+  color: @contrast_text_color_4;
+  &:hover {
+    background-color: @highlight_color;
+  }
+}

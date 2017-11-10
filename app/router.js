@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('themes');
+  this.route('currents');
 });
 
 export default Router;

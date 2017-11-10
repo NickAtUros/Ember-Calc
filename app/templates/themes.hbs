@@ -1,0 +1,20 @@
+<style>
+  button {
+    background-color: orange;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+</style>
+
+<div class="jumbo">
+  <h1 style="color: white">THEMES</h1>
+  {{#each model as |theme|}}
+    <article class="listing">
+      {{#link-to 'index' class="button"}}
+        <button style="color: white"{{action 'pressButton' theme.name}}>{{theme.name}}</button>
+      {{/link-to}}
+    </article>
+  {{/each}}
+</div>

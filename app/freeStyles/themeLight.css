@@ -1,0 +1,26 @@
+.themeName::before {
+  content: "Default";
+}
+body {
+  background-color: #5dcffc;
+}
+.number {
+  background-color: white;
+}
+.number:hover {
+  background-color: red;
+}
+.operation {
+  background-color: pink;
+  color: brown;
+}
+.operation:hover {
+  background-color: red;
+}
+.equals {
+  background-color: lavender;
+  color: brown;
+}
+.equals:hover {
+  background-color: red;
+}

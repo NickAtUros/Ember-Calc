@@ -1,28 +1,8 @@
+@import "themeDefault";
+
 @color_1: #6897bb;
 @color_2: @color_1 + #111;
 @color_3: white;
-@background_color_1: black;
-@background_color_2: grey;
-@background_color_3: orange;
-@background_color_4: blue;
-@background_color_5: white;
-
-input:checked {
-  & ~ body .screenDisplay {
-    background-color: orange;
-  }
-  & ~ body .operation {
-    background-color: lavender;
-    color: black;
-  }
-  & ~ body .number {
-    background-color: green;
-  }
-
-  & ~ body .equals {
-    background-color: purple;
-  }
-}
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes "example" {
@@ -54,18 +34,18 @@ html {
 }
 body {
   height: 100%;
-  background-color: #111111;
 }
 
 .screenDisplay {
   width: 95%;
   height: 200px;
-  background-color: @background_color_1;
+  background-color: black;
   margin-top: 22px;
   margin-left: 15px;
   text-align: right;
   position: relative;
   padding: 0;
+  border-radius: 10px;
 }
 .input-text {
   color: @color_1;
@@ -93,26 +73,6 @@ body {
   width: 24%;
   border-radius: 25px;
   font-size: 1rem;
-}
-.number:extend(.button) {
-  background-color: @background_color_2;
-  &:hover {
-    background-color: green;
-  }
-}
-.operation:extend(.button) {
-  background-color: @background_color_3;
-  color: @color_3;
-  &:hover {
-    background-color: green;
-  }
-}
-.equals:extend(.button) {
-  background-color: @background_color_4;
-  color: @color_3;
-  &:hover {
-    background-color: green;
-  }
 }
 
 ////////////////////////////////////////////
