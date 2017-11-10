@@ -2,11 +2,14 @@
 
 Ember-calc is a simple browser based calculator written in EmberJS
 
-The base skin can be changed with the checkbox in the upper left
+To change the theme, click the THEME button on the lower right and select
+your new look
 
-![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/screenshot.png)
-
-
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-42-24.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-42-50.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-06.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-22.png)
+![Screenshot](https://github.com/NickAtUros/Ember-Calc/blob/master/app/components/Screenshot from 2017-11-10 10-43-40.png)
 
 ## Prerequisites
 
@@ -16,7 +19,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
-* [ember-bootstrap](https://github.com/emberjs-addons/ember-bootstrap)
 
 
 ## Installation
